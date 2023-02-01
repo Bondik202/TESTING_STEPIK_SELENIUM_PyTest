@@ -1,8 +1,10 @@
+import allure
 from selenium.webdriver.common.by import By  # импортирование модуля для поиска локаторов
 from selenium.webdriver.support.wait import WebDriverWait  # импортирования модуля явное ожидание
 from selenium.webdriver.support import \
     expected_conditions as EC  # импортирование модуля для явного ожидание и создание новой нонстанты под него(ЕС)
 from base.base_class import Base
+from logs.logger import Logger
 
 
 class LoginPage(Base):
@@ -54,9 +56,12 @@ class LoginPage(Base):
     """Метод бизнес логика"""
 
     def avtorizations(self):
-        self.driver.get(self.url)
-        self.driver.maximize_window()
-        self.get_current_url()
-        self.input_user_name('artem_test_stepik@rambler.ru')
-        self.input_password('Qwer1234')
-        self.clic_clic_batton()
+        with allure.step('avtorizations'):
+            Logger.add_start_step(method='avtorizations')
+            self.driver.get(self.url)
+            self.driver.maximize_window()
+            self.get_current_url()
+            self.input_user_name('artem_test_stepik@rambler.ru')
+            self.input_password('Qwer1234')
+            self.clic_clic_batton()
+            Logger.add_end_step(url=self.driver.current_url, method='avtorizations')

@@ -1,0 +1,110 @@
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:39:46.247552
+Start name method: avtorizations
+
+End time: 2023-02-01 21:39:58.412406
+End name method: avtorizations
+URL: https://rybolov.org/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:39:58.413406
+Start name method: select_filter
+
+End time: 2023-02-01 21:40:09.116505
+End name method: select_filter
+URL: https://rybolov.org/shop/winter_fishing/winter_rods
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:09.116505
+Start name method: result
+
+End time: 2023-02-01 21:40:19.323185
+End name method: result
+URL: https://rybolov.org/shop/winter_fishing/winter_rods?filter%5Bprice%5D%5Bfrom%5D=230.77&filter%5Bprice%5D%5Bto%5D=1293.23&filter%5Bprice%5D%5Bmin%5D=46&filter%5Bprice%5D%5Bmax%5D=1478&inStock=1&filter%5Bdlinasm%5D%5Bfrom%5D=17.58&filter%5Bdlinasm%5D%5Bto%5D=70&filter%5Bdlinasm%5D%5Bmin%5D=5&filter%5Bdlinasm%5D%5Bmax%5D=70&filter%5Bdiametrkatushkimm%5D%5Bfrom%5D=50.34&filter%5Bdiametrkatushkimm%5D%5Bto%5D=95&filter%5Bdiametrkatushkimm%5D%5Bmin%5D=34.8&filter%5Bdiametrkatushkimm%5D%5Bmax%5D=95&limitstart=0
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:19.331186
+Start name method: buy_product
+
+End time: 2023-02-01 21:40:35.530476
+End name method: buy_product
+URL: https://rybolov.org/shop/winter_fishing/winter_rods?filter%5Bprice%5D%5Bfrom%5D=230.77&filter%5Bprice%5D%5Bto%5D=1293.23&filter%5Bprice%5D%5Bmin%5D=46&filter%5Bprice%5D%5Bmax%5D=1478&inStock=1&filter%5Bdlinasm%5D%5Bfrom%5D=17.58&filter%5Bdlinasm%5D%5Bto%5D=70&filter%5Bdlinasm%5D%5Bmin%5D=5&filter%5Bdlinasm%5D%5Bmax%5D=70&filter%5Bdiametrkatushkimm%5D%5Bfrom%5D=50.34&filter%5Bdiametrkatushkimm%5D%5Bto%5D=95&filter%5Bdiametrkatushkimm%5D%5Bmin%5D=34.8&filter%5Bdiametrkatushkimm%5D%5Bmax%5D=95&limitstart=0
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:35.530476
+Start name method: cart_finish
+
+End time: 2023-02-01 21:40:39.548702
+End name method: cart_finish
+URL: https://rybolov.org/shop/checkout
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:39.548702
+Start name method: cart_person
+
+End time: 2023-02-01 21:40:43.371218
+End name method: cart_person
+URL: https://rybolov.org/shop/checkout/shipping
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:43.371218
+Start name method: cart_finish_delivery
+
+End time: 2023-02-01 21:40:45.877077
+End name method: cart_finish_delivery
+URL: https://rybolov.org/shop/checkout/payment
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:45.877077
+Start name method: cart_finish_payment
+
+End time: 2023-02-01 21:40:47.974156
+End name method: cart_finish_payment
+URL: https://rybolov.org/shop/checkout/confirmation
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:47.974156
+Start name method: cart_order_confirmation
+
+End time: 2023-02-01 21:40:47.994278
+End name method: cart_order_confirmation
+URL: https://rybolov.org/shop/checkout/confirmation
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:40:48.002313
+Start name method: finish
+
+End time: 2023-02-01 21:40:48.105250
+End name method: finish
+URL: https://rybolov.org/shop/checkout/confirmation
+
+-----

@@ -1,8 +1,10 @@
+import allure
 from selenium.webdriver.common.by import By  # импортирование модуля для поиска локаторов
 from selenium.webdriver.support.wait import WebDriverWait  # импортирования модуля явное ожидание
 from selenium.webdriver.support import \
     expected_conditions as EC  # импортирование модуля для явного ожидание и создание новой нонстанты под него(ЕС)
 from base.base_class import Base
+from logs.logger import Logger
 
 
 class PersonPage(Base):
@@ -29,7 +31,9 @@ class PersonPage(Base):
     """Метод бизнес логика"""
 
     def cart_person(self):
-        self.get_current_url()
-        self.driver.execute_script("scrollBy(0, -300);")
-        self.click_next()
-
+        with allure.step('cart_person'):
+            Logger.add_start_step(method='cart_person')
+            self.get_current_url()
+            self.driver.execute_script("scrollBy(0, -300);")
+            self.click_next()
+            Logger.add_end_step(url=self.driver.current_url, method='cart_person')

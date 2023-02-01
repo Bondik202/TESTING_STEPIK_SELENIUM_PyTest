@@ -1,4 +1,7 @@
+import allure
+
 from base.base_class import Base
+from logs.logger import Logger
 
 
 class FinishPage(Base):
@@ -8,5 +11,8 @@ class FinishPage(Base):
         self.driver = driver
 
     def finish(self):
-        self.get_current_url()
-        self.screenshot()
+        with allure.step('finish'):
+            Logger.add_start_step(method='finish')
+            self.get_current_url()
+            self.screenshot()
+            Logger.add_end_step(url=self.driver.current_url, method='finish')

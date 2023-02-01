@@ -1,8 +1,10 @@
+import allure
 from selenium.webdriver.common.by import By  # импортирование модуля для поиска локаторов
 from selenium.webdriver.support.wait import WebDriverWait  # импортирования модуля явное ожидание
 from selenium.webdriver.support import \
     expected_conditions as EC  # импортирование модуля для явного ожидание и создание новой нонстанты под него(ЕС)
 from base.base_class import Base
+from logs.logger import Logger
 
 
 class BuyProductPage(Base):
@@ -66,7 +68,10 @@ class BuyProductPage(Base):
     """Метод бизнес логика"""
 
     def buy_product(self):
-        self.get_current_url()
-        self.clic_buy_product_1()
-        self.clic_buy_product_2()
-        self.clic_buy_product_3()
+        with allure.step('buy_product'):
+            Logger.add_start_step(method='buy_product')
+            self.get_current_url()
+            self.clic_buy_product_1()
+            self.clic_buy_product_2()
+            self.clic_buy_product_3()
+            Logger.add_end_step(url=self.driver.current_url, method='buy_product')

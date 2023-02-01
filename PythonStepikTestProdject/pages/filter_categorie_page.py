@@ -1,9 +1,11 @@
+import allure
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By  # импортирование модуля для поиска локаторов
 from selenium.webdriver.support.wait import WebDriverWait  # импортирования модуля явное ожидание
 from selenium.webdriver.support import \
     expected_conditions as EC  # импортирование модуля для явного ожидание и создание новой нонстанты под него(ЕС)
 from base.base_class import Base
+from logs.logger import Logger
 
 
 class FilterPage(Base):
@@ -89,14 +91,17 @@ class FilterPage(Base):
     """Метод бизнес логика"""
 
     def result(self):
-        self.get_current_url()
-        self.clic_chek_box()
-        self.input_price_min(self.action)
-        self.input_price_max(self.action)
-        self.driver.execute_script('window.scrollTo(0, 500)')  # Скролим экран вниз
-        self.input_long_min(self.action)
-        self.input_long_max(self.action)
-        self.input_weight_min(self.action)
-        self.input_weight_min(self.action)
-        self.clic_show_result()
-        self.driver.execute_script('window.scrollTo(0, 500)')  # Скролим экран вниз
+        with allure.step('result'):
+            Logger.add_start_step(method='result')
+            self.get_current_url()
+            self.clic_chek_box()
+            self.input_price_min(self.action)
+            self.input_price_max(self.action)
+            self.driver.execute_script('window.scrollTo(0, 500)')  # Скролим экран вниз
+            self.input_long_min(self.action)
+            self.input_long_max(self.action)
+            self.input_weight_min(self.action)
+            self.input_weight_min(self.action)
+            self.clic_show_result()
+            self.driver.execute_script('window.scrollTo(0, 500)')  # Скролим экран вниз
+            Logger.add_end_step(url=self.driver.current_url, method='result')

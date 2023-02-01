@@ -1,8 +1,10 @@
+import allure
 from selenium.webdriver.common.by import By  # импортирование модуля для поиска локаторов
 from selenium.webdriver.support.wait import WebDriverWait  # импортирования модуля явное ожидание
 from selenium.webdriver.support import \
     expected_conditions as EC  # импортирование модуля для явного ожидание и создание новой нонстанты под него(ЕС)
 from base.base_class import Base
+from logs.logger import Logger
 
 
 class DeliveryMethod(Base):
@@ -31,6 +33,9 @@ class DeliveryMethod(Base):
     """Метод бизнес логика"""
 
     def cart_finish_delivery(self):
-        self.get_current_url()
-        self.driver.execute_script('window.scrollTo(0, 2000)')
-        self.click_next_delivery()
+        with allure.step('cart_finish_delivery'):
+            Logger.add_start_step(method='cart_finish_delivery')
+            self.get_current_url()
+            self.driver.execute_script('window.scrollTo(0, 2000)')
+            self.click_next_delivery()
+            Logger.add_end_step(url=self.driver.current_url, method='cart_finish_delivery')

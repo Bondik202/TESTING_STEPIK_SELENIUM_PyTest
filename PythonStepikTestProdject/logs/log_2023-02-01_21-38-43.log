@@ -1,0 +1,28 @@
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:38:53.930717
+Start name method: avtorizations
+
+End time: 2023-02-01 21:39:05.529563
+End name method: avtorizations
+URL: https://rybolov.org/
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:39:05.530563
+Start name method: select_filter
+
+End time: 2023-02-01 21:39:12.551089
+End name method: select_filter
+URL: https://rybolov.org/shop/winter_fishing/winter_rods
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_select_product1 (call)
+Start time: 2023-02-01 21:39:12.551089
+Start name method: result
+

@@ -10,8 +10,10 @@ import time
 from selenium import webdriver
 from pages.main_filter_page import MenuBurgerPage
 from pages.person_page import PersonPage
+import allure
 
 
+@allure.description('Test 1 bissnes road')
 def test_select_product1(set_up, set_group):
     driver = webdriver.Firefox(executable_path='/driwer/geckodriver.exe')
 

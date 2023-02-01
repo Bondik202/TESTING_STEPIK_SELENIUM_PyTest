@@ -1,0 +1,46 @@
+ >>>>---Вход в систему---<<<<
+ ___!!!___Начало теста___!!!___
+Начало теста 1
+Фактический URL https://rybolov.org/shop/user/login
+Пользователь введен
+Пароль введен
+Клик по кнопке, войти
+Фактический URL https://rybolov.org/
+Клик по каталогу
+Клик по секции
+Клик по категории
+Фактический URL https://rybolov.org/shop/winter_fishing/winter_rods
+Кликаем по чекбоксу
+Минемальная ценна введена
+Максимальная ценна введена
+Минемальная длинна введена
+Максимальная длинна введена
+Минемальный диаметр введен
+Минемальный диаметр введен
+Кликаем по кнопке, показать результат
+Фактический URL https://rybolov.org/shop/winter_fishing/winter_rods?filter%5Bprice%5D%5Bfrom%5D=230.77&filter%5Bprice%5D%5Bto%5D=1293.23&filter%5Bprice%5D%5Bmin%5D=46&filter%5Bprice%5D%5Bmax%5D=1478&inStock=1&filter%5Bdlinasm%5D%5Bfrom%5D=17.58&filter%5Bdlinasm%5D%5Bto%5D=70&filter%5Bdlinasm%5D%5Bmin%5D=5&filter%5Bdlinasm%5D%5Bmax%5D=70&filter%5Bdiametrkatushkimm%5D%5Bfrom%5D=50.34&filter%5Bdiametrkatushkimm%5D%5Bto%5D=95&filter%5Bdiametrkatushkimm%5D%5Bmin%5D=34.8&filter%5Bdiametrkatushkimm%5D%5Bmax%5D=95&limitstart=0
+Клик по продукту 1
+Фактический URL https://rybolov.org/shop/winter_fishing/winter_rods/udochka-zimnyaya-akara-balalajka-otkrytaya-tk0025
+Продукт № 1 добавлен в корзину
+Клик по продукту 2
+Фактический URL https://rybolov.org/shop/winter_fishing/winter_rods/udochka-zimnyaya-akara-60074-70050-neoprenovaya-ruchka
+Продукт № 2 добавлен в корзину
+Клик по продукту 3
+Фактический URL https://rybolov.org/shop/winter_fishing/winter_rods/udochka-zimnyaya-akara-ql-504a-probkovaya-ruchka
+Продукт № 3 добавлен в корзину
+Фактический URL https://rybolov.org/shop/winter_fishing/winter_rods?filter%5Bprice%5D%5Bfrom%5D=230.77&filter%5Bprice%5D%5Bto%5D=1293.23&filter%5Bprice%5D%5Bmin%5D=46&filter%5Bprice%5D%5Bmax%5D=1478&inStock=1&filter%5Bdlinasm%5D%5Bfrom%5D=17.58&filter%5Bdlinasm%5D%5Bto%5D=70&filter%5Bdlinasm%5D%5Bmin%5D=5&filter%5Bdlinasm%5D%5Bmax%5D=70&filter%5Bdiametrkatushkimm%5D%5Bfrom%5D=50.34&filter%5Bdiametrkatushkimm%5D%5Bto%5D=95&filter%5Bdiametrkatushkimm%5D%5Bmin%5D=34.8&filter%5Bdiametrkatushkimm%5D%5Bmax%5D=95&limitstart=0
+Клик по корзине
+Клик покнопке, оформить заказ
+Фактический URL https://rybolov.org/shop/checkout
+Клик по кнопке, продолжить
+Фактический URL https://rybolov.org/shop/checkout/shipping
+Клик по кнопке, продолжить
+Фактический URL https://rybolov.org/shop/checkout/payment
+Клик по кнопке, оплатить с помощью карты при получении
+Клик по кнопке, продолжить
+Фактический URL https://rybolov.org/shop/checkout/confirmation
+Фактический URL https://rybolov.org/shop/checkout/confirmation
+Скриншот сделан
+Тест 1 закончен
+ ___!!!___Конец теста___!!!___
+ <<<<---Выход из системы--->>>>
